@@ -1,0 +1,23 @@
+version: 3.0
+
+env:
+  Name: John
+  Age: 57
+  Class: Warrior
+  Region: US
+
+tasks:
+  taskone:
+    description: a few prints
+    cmds:
+      - date
+      - echo 2
+      - echo $GREETING
+      - echo $Region
+    env:
+      GREETING: Hey, there!
+  tasktwo:
+    cmds:
+      - echo 3
+      - echo 4
+      - echo 5
